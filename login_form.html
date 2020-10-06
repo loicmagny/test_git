@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <h1>Inscription</h1>
+    <form action="index.html" method="get" class="form">
+      <!-- start user personnal infos -->
+      <fieldset>
+        <div id="gender">
+          <label><input name="civility" type="radio" />Monsieur</label>
+          <label><input name="civility" type="radio" />Madame</label>
+        </div>
+        <div>
+          <label for="Lname">Nom : </label>
+          <input type="text" name="Lname" id="Lname" required />
+        </div>
+        <div>
+          <label for="Fname">Prénom : </label>
+          <input type="text" name="Fname" id="Fname" required />
+        </div>
+        <div>
+          <label for="email">Adresse mail: </label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            placeholder="adresse@mail.fr"
+          />
+        </div>
+        <div>
+          <label for="birthdate">Date de naissance </label>
+          <input
+            type="date"
+            name="birthdate"
+            id="birthdate"
+            required
+            placeholder="adresse@mail.fr"
+          />
+        </div>
+
+        <!-- end of user personnal informations -->
+        <!-- start of user adress informations -->
+        <div>
+          <label for="streetName">Nom de rue </label>
+          <input type="text" name="text" id="streetName" required />
+        </div>
+        <div>
+          <label for="streetNum">Numéro de rue </label>
+          <input type="streetNum" name="streetNum" id="streetNum" required />
+        </div>
+        <div>
+          <label for="city">Ville </label>
+          <input type="text" name="city" id="city" required />
+        </div>
+        <div>
+          <label for="postal">Code postal : </label>
+          <input type="text" name="postal" id="postal" required />
+        </div>
+        <!-- end of user adress informations -->
+        <!-- Start of user's car infos -->
+        <div>
+          <select name="carBrand" id="carBrand-select">
+            <option value="">Choisir marque</option>
+            <option value="Renault">Renault</option>
+            <option value="Peugeot">Peugeot</option>
+            <option value="Citroën">Citroën</option>
+            <option value="Fiat">Fiat</option>
+            <option value="BMW">BMW</option>
+            <option value="Hyundai">Hyundai</option>
+          </select>
+        </div>
+        <div>
+          <select name="carModel" id="carModel-select">
+            <option value="">Choisir modèle</option>
+          </select>
+        </div>
+        <div>
+          <label for="description">Description</label>
+          <textarea name="description" id="description" required> </textarea>
+        </div>
+        <!-- End of user car infos -->
+      </fieldset>
+      <div>
+        <input type="submit" value="S'inscire" id="submit" />
+      </div>
+    </form>
+  </body>
+</html>

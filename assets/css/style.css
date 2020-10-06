@@ -1,12 +1,58 @@
+body {
+  align-content: center;
+  font-family: "Fira Mono", monospace;
+  font-size: 12px;
+}
 table,
-td, th {
-    border: 1px solid #333;
-    border-collapse: collapse;
-    padding: 5px;
+td,
+th {
+  border: 1px solid #333;
+  border-collapse: collapse;
+  padding: 5px;
 }
 
 thead,
 tfoot {
-    background-color: #333;
-    color: #fff;
+  background-color: #333;
+  color: #fff;
+}
+#email,
+#Lname,
+#Fname,
+#birthdate,
+#streetName,
+#streetNum,
+#city,
+#postal,
+#description {
+  display: flex;
+  margin: 0.5em;
+}
+select {
+  margin: 0.5em;
+}
+form {
+  align-content: center;
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+}
+h1 {
+  align-content: center;
+  margin: 0 auto;
+  width: 1em;
+  height: auto;
+}
+fieldset {
+  margin: 0 auto;
+  width: auto;
+  height: auto;
+  border-radius: 1em;
+  background-color: aquamarine;
+}
+#submit {
+  position: absolute;
+  margin: auto;
+  margin-top: 0.5em;
 }
