@@ -12,39 +12,114 @@
             <th colspan="6">Largeur d'écran selon les points de ruptures (Breakpoints)</th>
         </thead>
         <tr>
-          <td>Breakpoint</td>
-          <td>Content Space Width</td>
-          <td>Screen Width (minimum)</td>
-          <td>Screen Width (maximum)</td>
-          <td>% of desktop/tablet</td>
+            <td scope="col">Content Space Width</td>
+            <td scope="col">Screen Width (minimum)</td>
+            <td scope="col">Screen Width (maximum)</td>
+            <td scope="col">% of desktop/tablet</td>
+            <td scope="col">Breakpoint</td>
         </tr>
-        <tr>
-          <td>Tablet Portrait</td>
-          <td>768px</td>
-          <td>768</td>
-          <td>1023</td>
-          <td>16%</td>
+        <tr scope="row">
+            <td>768px</td>
+            <td>768</td>
+            <td>1023</td>
+            <td>16%</td>
+            <td>Tablet Portrait</td>
         </tr>
-        <tr>
-          <td>Tablet Landscape</td>
-          <td>1024px</td>
-          <td>1024</td>
-          <td>1084</td>
-          <td rowspan="2">50%</td>
+        <tr scope="row">
+            <td>1024px</td>
+            <td>1024</td>
+            <td>1084</td>
+            <td rowspan="2">50%</td>
+            <td>Tablet Landscape</td>
         </tr>
-        <tr>
-          <td>Desktop</td>
-          <td>1084px</td>
-          <td>1084</td>
-          <td>1594</td>
+        <tr scope="row">
+            <td>1084px</td>
+            <td>1084</td>
+            <td>1594</td>
+            <td>Desktop</td>
         </tr>
-        <tr>
-          <td>Desktop XL</td>
-          <td>1238px</td>
-          <td>1595</td>
-          <td>&#8734</td>
-          <td>34%</td>
+        <tr scope="row">
+            <td>1238px</td>
+            <td>1595</td>
+            <td>&#8734</td>
+            <td>34%</td>
+            <td>Desktop XL</td>
         </tr>
-      </table>
+    </table>
+    
+    <!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau HTML</title>
+    <style>
+        table,
+        tr,
+        td,
+        th {
+            /* ajout de bordures */
+            border: 1px solid;
+            /* fusionne les bordures adjacentes  */
+            border-collapse: collapse;
+            /* aligne le texte à gauche de la cellule */
+            text-align: left;
+            /* ajoute une marge intérieur de 10px */
+            padding-left: 10px;
+        }
+        /* mise en forme du titre du tableau */
+        caption {
+            padding: 10px;
+            /* permet de positionner le titre soit en haut ou en bas du tableau */
+            caption-side: bottom;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        // Ajoute un titre au tableau //
+        <caption>Largeur d'écran selon les points de rupture (breakpoints)</caption>
+        <thead>
+            <tr>
+                // L'attribut scope permet d'indiquer à un lecteur d'écran si la cellule contient un entête de colonne ou de ligne //
+                <th scope="col">Breakpoint</th>
+                <th scope="col">Content Space Width</th>
+                <th scope="col">Screen Width (minimum)</th>
+                <th scope="col">Screen width (maximum</th>
+                <th scope="col">&percnt; of desktop/tablette traffic</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Tablet portrait</th>
+                <td>768px</td>
+                <td>768</td>
+                <td>1023</td>
+                <td>16 &percnt;</td>
+            </tr>
+            <tr>
+                <th scope="row">Tablet Landscape</th>
+                <td>1024px</td>
+                <td>1024</td>
+                <td>1084</td>
+                // rowpan permet de fusionner de cellule verticalement /!\ la 2ème cellule ne doit pas être définie //
+                <td rowspan="2">50 &percnt;</td>
+            </tr>
+            <tr>
+                <th scope="row">Desktop</th>
+                <td>1084px</td>
+                <td>1084</td>
+                <td>1594</td>
+            </tr>
+            <tr>
+                <th scope="row">Desktop XL</th>
+                <td>1238px</td>
+                <td>1595</td>
+                <td>&infin;</td>
+                <td>34 &percnt;</td>
+            </tr>
+        </tbody>
+    </table>
+</body> -->
 </body>
 </html>
